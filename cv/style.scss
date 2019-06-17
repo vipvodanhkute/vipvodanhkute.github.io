@@ -1,0 +1,137 @@
+.header{
+    background-color:#007bff;
+    text-align: right;
+    padding:10px;
+    color:white;
+    border-bottom: 5px solid black;
+    h1{
+        font-size: 60px;
+        margin: 0;
+        text-shadow: -2px 3px white;
+    }
+    p{
+        font-size: 25px;
+        padding: 0;
+        margin:0;
+        font-style: italic;
+    }
+}
+.info{
+    background-color: gray;
+    color: white;
+    padding:30px;
+    h3{
+        color:#007bff;
+        font-weight: 700;
+    }
+    .hv{
+        position: relative;
+        &:after{
+            content: '';
+            display:block;
+            width: 70%;
+            position: absolute;
+            height: 5px;
+            background:white;
+            right: 0;
+            top:50%;
+        }
+    }
+    .knlv{
+        position: relative;
+        &:after{
+            content: '';
+            display:block;
+            width: 50%;
+            position: absolute;
+            height: 5px;
+            background:white;
+            right: 0;
+            top:50%;
+        }
+    }
+    .ktcm{
+        position: relative;
+        &:after{
+            content: '';
+            display:block;
+            width: 50%;
+            position: absolute;
+            height: 5px;
+            background:white;
+            right: 0;
+            top:50%;
+        }
+    }
+    .npdl{
+        position: relative;
+        &:after{
+            content: '';
+            display:block;
+            width: 50%;
+            position: absolute;
+            height: 5px;
+            background:white;
+            right: 0;
+            top:50%;
+        }
+    }
+}
+.add{
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    padding: 20px;
+    h3{
+        color: #007bff;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        margin-left: 20px;
+    }
+    .info{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: gray;
+        
+    }
+    .kn{
+        position: relative;
+        &:after{
+            content: '';
+            display:block;
+            width: 50%;
+            position: absolute;
+            height: 5px;
+            background:white;
+            right: 0;
+            top:50%;
+        }
+    }
+    .st{
+        margin-top:20px;
+        position: relative;
+        &:after{
+            content: '';
+            display:block;
+            width: 50%;
+            position: absolute;
+            height: 5px;
+            background:white;
+            right: 0;
+            top:50%;
+        }
+    }
+}
+.row{
+    margin-right: 0; 
+    margin-left: 0; 
+}
+.far,.fas,.fab{
+    color: white;
+    background-color: #007bff;
+    padding: 3px;
+    border-radius: 100%;
+}

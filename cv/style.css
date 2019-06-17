@@ -1,0 +1,119 @@
+.header {
+  background-color: #007bff;
+  text-align: right;
+  padding: 10px;
+  color: white;
+  border-bottom: 5px solid black; }
+  .header h1 {
+    font-size: 60px;
+    margin: 0;
+    text-shadow: -2px 3px white; }
+  .header p {
+    font-size: 25px;
+    padding: 0;
+    margin: 0;
+    font-style: italic; }
+
+.info {
+  background-color: gray;
+  color: white;
+  padding: 30px; }
+  .info h3 {
+    color: #007bff;
+    font-weight: 700; }
+  .info .hv {
+    position: relative; }
+    .info .hv:after {
+      content: '';
+      display: block;
+      width: 70%;
+      position: absolute;
+      height: 5px;
+      background: white;
+      right: 0;
+      top: 50%; }
+  .info .knlv {
+    position: relative; }
+    .info .knlv:after {
+      content: '';
+      display: block;
+      width: 50%;
+      position: absolute;
+      height: 5px;
+      background: white;
+      right: 0;
+      top: 50%; }
+  .info .ktcm {
+    position: relative; }
+    .info .ktcm:after {
+      content: '';
+      display: block;
+      width: 50%;
+      position: absolute;
+      height: 5px;
+      background: white;
+      right: 0;
+      top: 50%; }
+  .info .npdl {
+    position: relative; }
+    .info .npdl:after {
+      content: '';
+      display: block;
+      width: 50%;
+      position: absolute;
+      height: 5px;
+      background: white;
+      right: 0;
+      top: 50%; }
+
+.add {
+  color: white;
+  background-color: black;
+  opacity: 0.8;
+  padding: 20px; }
+  .add h3 {
+    color: #007bff; }
+  .add img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    margin-left: 20px; }
+  .add .info {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: gray; }
+  .add .kn {
+    position: relative; }
+    .add .kn:after {
+      content: '';
+      display: block;
+      width: 50%;
+      position: absolute;
+      height: 5px;
+      background: white;
+      right: 0;
+      top: 50%; }
+  .add .st {
+    margin-top: 20px;
+    position: relative; }
+    .add .st:after {
+      content: '';
+      display: block;
+      width: 50%;
+      position: absolute;
+      height: 5px;
+      background: white;
+      right: 0;
+      top: 50%; }
+
+.row {
+  margin-right: 0;
+  margin-left: 0; }
+
+.far, .fas, .fab {
+  color: white;
+  background-color: #007bff;
+  padding: 3px;
+  border-radius: 100%; }
+
+/*# sourceMappingURL=style.css.map */
