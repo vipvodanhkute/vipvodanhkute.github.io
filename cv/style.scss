@@ -203,6 +203,23 @@ footer{
     display:flex;
     flex-direction:row;
 }
+@media (max-width:1200px){
+    .info{
+        .hv,.knlv,.ktcm,.npdl{
+            &:after{
+                width: 0;
+            }
+        }
+    }
+    .add{
+        .st,.kn{
+            &:after{
+                width:0;
+            }
+        }
+    }
+
+}
 @media (max-width:576px){
     footer{
         .right{
@@ -216,6 +233,13 @@ footer{
         }
         .add{
             order:1;
+        }
+    }
+    .info{
+        .npdl{
+            &:after{
+                width:0;
+            }
         }
     }
     .add{
