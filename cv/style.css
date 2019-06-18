@@ -172,6 +172,12 @@ footer {
   display: flex;
   flex-direction: row; }
 
+@media (max-width: 1200px) {
+  .info .hv:after, .info .knlv:after, .info .ktcm:after, .info .npdl:after {
+    width: 0; }
+
+  .add .st:after, .add .kn:after {
+    width: 0; } }
 @media (max-width: 576px) {
   footer .right {
     margin-top: 0; }
@@ -182,6 +188,9 @@ footer {
       order: 2; }
     .flex-container .add {
       order: 1; }
+
+  .info .npdl:after {
+    width: 0; }
 
   .add img {
     margin-left: auto;
