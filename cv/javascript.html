@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <table class="table">
+                    <thead>
+                        <td>Họ và tên</td>
+                        <td>SĐT</td>
+                        <td>Địa chỉ</td>
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Huỳnh Văn Như</td>
+                            <td>0914885317</td>
+                            <td>Nha Trang - Khánh Hòa</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <pre>
+    2. Nhìn và đọc Phép biến đổi "nhìn và đọc" được định nghĩa như sau: Bắt đầu từ số ở đầu tiên X. Với các số giống nhau thì nhóm lại thành một dãy (giả sử có Y số) thì dãy này được chuyển thành YX. Ví dụ 122344111 đọc là "một 1, hai 2, một 3, hai 4, ba 1", do đó chuỗi 122344111 chuyển thành 1122132431. 
+    Input Dòng đầu chứa số bộ test:  Mỗi dòng sau chứa 1 bộ test chứa chuỗi cần biến đổi (không quá 1000 chữ số) 
+    Output 
+    Với mỗi bộ test, in ra kết quả phép biến đổi 
+</pre>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="c2a" cols="30" rows="10"></textarea>
+                    </div>
+                    <button id="c2" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="c2b" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <pre>
+    3. Làm tròn số 
+    Cho trước một số nguyên, người ta sẽ làm tròn số này theo quy tắc sau: 
+    • Nếu số đó lớn hơn 10 thì sẽ được làm tròn đến số hàng chục gần nhất • Sau đó nếu kết quả lớn hơn 100 thì làm tròn đến số hàng trăm gần nhất • Sau đó nếu kết quả lớn hơn 1000 thì làm tròn đến số hàng nghìn gần nhất • …cứ tiếp tục như vậy … Chú ý: giá trị 5 được làm tròn lên. 
+    Hãy viết chương trình làm tròn số theo quy tắc trên. 
+    Input 
+    Dòng đầu tiên chứa số n là số bộ test (không quá 100). 
+    • n dòng tiếp theo, mỗi dòng ghi một số nguyên x với 0 <= x <= 99999999. 
+    Output 
+    • Với mỗi bộ test, in ra màn hình trên một dòng kết quả của phép làm tròn. 
+    </pre>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="c3a" cols="30" rows="10"></textarea>
+                    </div>
+                    <button id="c3" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="c3b" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <pre>
+    4. Số thuận nghịch Ngày nay, việc sử dụng bàn phím điện thoại di động để nhấn các số đã trở thành một việc rất quen thuộc với các bạn sinh viên. Ai cũng biết các phím số trên điện thoại cũng là các phím dùng để nhấn các chữ cái: 
+    2: ABC, 3: DEF, 4: GHI, 5: JKL, 6: MNO, 7: PQRS, 8: TUV, 9: WXYZ 
+    Nam viết ra giấy một dãy ký tự và đố Bình xác định đó là dãy số nào theo cách nhấn số trên điện thoại (chỉ xem xét sự tương ứng giữa số và ký tự chứ không xem xét phải nhấn bao nhiêu lần phím đó, ví dụ cả A, B, C đều là một số 2). Bình rất nhanh chóng xác định được kết quả, không những thế Bình còn muốn xác định nhanh xem số đó có phải là số dạng thuận nghịch hay không.  Một số là thuận nghịch nếu viết theo thứ tự ngược lại cũng là chính nó. Hãy viết chương trình giúp Bình thực hiện công việc trên. 
+    Input 
+    • Dòng đầu tiên chứa số n là số bộ test (không quá 1000). • Mỗi bộ test viết trên một dòng một dãy ký tự gồm các chữ cái có thể là chữ hoa hoặc chữ thường, dài không quá 20 ký tự, không có khoảng trống. 
+    Output Với mỗi bộ test, in ra màn hình, trên một dòng, chữ “YES” nếu đó tương ứng là số thuận nghịch, chữ “NO” nếu ngược lại.      
+    </pre>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="c4a" cols="30" rows="10"></textarea>
+                    </div>
+                    <button id="c4" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="c4b" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <pre>
+        7. Lặp lại các ký tự Với một xâu ký tự S, và một số nguyên R, hãy tạo ra một xâu T bằng cách mỗi ký tự trong S được lặp lại R lần.
+        Các ký tự trong S có thể nằm trong dãy: 0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ$%*+-./: 
+ 
+        Input Dòng 1 ghi số bộ test (không quá 1000) Mỗi bộ test gồm số thứ tự, một dấu cách, tiếp theo là số 1<=R<=8, một dấu cách, rồi đến xâu ký tự S (không quá 20 ký tự). 
+         
+        Output Với mỗi bộ test ghi trên một dòng số thứ tự bộ test, một dấu cách rồi đến xâu T. 
+         
+         
+    </pre>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="c7a" cols="30" rows="10"></textarea>
+                    </div>
+                    <button id="c7" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="c7b" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <pre>
+        8. M O O Những con bò đang chuẩn bị bắt đầu chơi trò “Moo”.
+        Chúng đứng trên một hàng dài, trong đó mỗi con bò trong hàng sẽ nói một chữ cái nhanh nhất có thể. Con bò nào phạm luật đầu tiên thì sẽ thua.
+        Dãy các kí tự “Moo” có thể kéo dài liên tục và không giới hạn.
+        Chúng sẽ bắt đầu như sau: m o o m o o o m o o m o o o o m o o m o o o m o o m o o o o Dãy kí tự được diễn tả như sau:
+        Gọi S(0)là một trong ba kí tự “m o o”. Sau đó dãy kí tự S(k)sẽ bằng dãy S(k-1) và thêm vào “m o … o” với k+2 chữ o, và sau đó cộng thêm một lần cho S(k-1).
+        Ví dụ: 
+        S(0) = "m o o" 
+        S(1) = "m o o m o o o m o o" 
+        S(2) = "m o o m o o o m o o m o o o o m o o m o o o m o o"
+        Với cách này sẽ tạo được dãy kí tự rất dài, và dãy này sẽ dùng cho game Moo.
+        Cô bò Bessie muốn biết kí tự thứ N của dãy này là chữ “m” hay chữ “o”. Bạn hãy giúp Bessie nhé! 
+ 
+        Input *Dòng 1: Gồm một số nguyên N(1 <= N <= 10^9). 
+         
+        Output *Dòng 1: Dòng duy nhất chứa kí tự “m” hoặc “o”. 
+         
+    </pre>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="c8a" cols="30" rows="10"></textarea>
+                    </div>
+                    <button id="c8" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="c8b" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <pre>
+        9. Số gần nguyên tố Chúng ta đều biết số nguyên tố là số nguyên dương mà chỉ có duy nhất 2 ước phân biệt.
+        Iron man luôn thích những cái đặc biệt và mới mẻ, và anh ra đưa ra 1 định nghĩa mới “Số gần nguyên tố” – là các số nguyên dương mà có đúng 3 ước phân biệt.
+        Bạn được cho 1 mảng có n phần tử, hãy kiểm tra xem từng phần tử trong mảng có phải là số gần nguyên tố hay không.
+        Input Dòng đầu tiên nhập vào số tự nhiên n (1 <= n <= 10^5) là số phần tử của mảng. Dòng tiếp theo nhập n số nguyên dương x[i] (1 <= x[i] <= 10^12)
+        Output In ra trên n dòng: dòng thứ i in “YES” nếu x[i] là số gần nguyên tố, ngược lại thì in “NO”.
+    </pre>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="c9a" cols="30" rows="10"></textarea>
+                    </div>
+                    <button id="c9" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="c9b" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <pre>
+        10. Tính sát thương
+        Ursa là một hero rất bá đạo trong DotA, anh có kỹ năng gia tăng sức mạnh sau mỗi cú đánh theo công thức: 
+        Di = Di-1 + i với i là số thứ tự cú đánh và Di là lượng sát thương gây ra sau cú đánh đó, với i = 1 thì Di = 1.
+        Thanh mới tập chơi DotA và chơi một hero có lượng máu cơ bản là X. Hero của Thanh không chịu được đòn đánh có sát thương lớn hơn X.
+        Bạn hãy giúp Thanh tính xem có thể chịu được tối đa bao nhiêu cú đánh của Ursa.
+        Input Dòng duy nhất chứa số X (1 <= X <= 10000). Output In ra số cú đánh tối đa mà hero của Sơn có thể chịu được
+    </pre>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="c10a" cols="30" rows="10"></textarea>
+                    </div>
+                    <button id="c10" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="col-6">
+                <form action="">
+                    <div class="form-group">
+                        <textarea class="form-control" name="" id="c10b" cols="30" rows="10"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./app.js"></script>
+</body>
+
+</html>
