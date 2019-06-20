@@ -2,6 +2,8 @@
     $('#c2').on("click", c2);
     $('#c3').on("click", c3);
     $('#c4').on("click", c4);
+    $('#c5').on("click", c5);
+    $('#c6').on("click", c6);
     $('#c7').on("click", c7);
     $('#c8').on("click", c8);
     $('#c9').on("click", c9);
@@ -108,9 +110,70 @@ function c4(e) {
         }
         var y = ""
         result.forEach((x) => {
-            y += " " + x
+            y +=x+"\n"
         })
+        $("#c4b").html(y);
     }
+}
+function c5(e){
+    e.preventDefault();
+    var c5a=$("#c5a").val();
+    var c5Arr=c5a.split("\n");
+    n=c5Arr.length;
+    var a=[];
+    var scl=c5Arr[0].split(" ");
+    var r=scl[0];
+    var c=scl[1];
+    var o=r*c;
+    var i=0;
+    while(i<o){
+        a.push(0);
+        i++
+    }
+    for(let i=1;i<=r;i++){
+        for(let j=0;j<c;j++){
+            if(c5Arr[i].charAt(j)=="S"){
+                let x=(i-1)*c+j;
+                a[x]=1;
+            }
+        }
+    }
+    for(let i=0;i<r;i++){
+        console.log(i);
+        for(let j=0;j<c;j++){
+            let x=i*c+j;
+            if(a[x]==1){
+                break;
+            }else{
+                a[x]=2
+            }
+        }
+    }
+    console.log(a);
+}
+function c6(e){
+    e.preventDefault();
+    var c6a=$("#c6a").val();
+    var c6Arr=c6a.split(" ");
+    if(c6Arr.length!=2){
+        $("#c6b").html("Du lieu khong dung");
+    }else{
+    var result=[];
+    var str="";
+    var x=c6Arr[1]%(c6Arr[0]-1);
+    var y=c6Arr[1]/(c6Arr[0]-1);
+    if(x==0){
+        result.push(eval(c6Arr[0]*y-1));
+        result.push(eval(c6Arr[0]*y));
+    }else{
+        result.push(eval(Math.floor(y)*c6Arr[0]+1));
+        result.push(parseInt(Math.ceil(y))-1+parseInt(c6Arr[1]));
+    }
+    for(let i=0;i<=1;i++){
+        str+=result[i]+"\n"
+    }
+    $("#c6b").html(str);
+}
 }
 function c7(e){
     e.preventDefault();
