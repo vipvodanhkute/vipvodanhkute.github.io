@@ -139,17 +139,53 @@ function c5(e){
         }
     }
     for(let i=0;i<r;i++){
-        console.log(i);
+        let tam=0;
         for(let j=0;j<c;j++){
             let x=i*c+j;
             if(a[x]==1){
+                tam++;
                 break;
-            }else{
-                a[x]=2
             }
         }
+        if(tam==0){
+          for(let j=0;j<c;j++){
+             let x=i*c+j;   
+             a[x]=2;
+          }  
+        }
+
     }
-    console.log(a);
+    for(let i=0;i<c;i++){
+        let tam=0;
+        for(let j=0;j<r;j++){
+            let x=i+j*4;
+            if(a[x]==1){
+                tam++
+                //break;
+        }    
+        // console.log("tam "+tam);
+        // if(tam==0){
+        //     for(let j=1;j<=r;j++){
+        //         let x=i+j*4-r-1;
+        //         a[x]=2;
+        //     }
+        //     console.log('iii'+i);
+        // }
+   }
+   if(tam==0){
+    for(let j=0;j<r;j++){
+        let x=i+j*4;
+        a[x]=2;  
+    }
+}
+}
+    var count=0;
+    a.forEach(x=>{
+        if(x==2){
+            count++
+        }
+    })
+    $("#c5b").html(count);
 }
 function c6(e){
     e.preventDefault();
