@@ -1,4 +1,5 @@
 ﻿$(document).ready(() => {
+    $('#c1').on("click", c1);
     $('#c2').on("click", c2);
     $('#c3').on("click", c3);
     $('#c4').on("click", c4);
@@ -9,6 +10,9 @@
     $('#c9').on("click", c9);
     $('#c10').on("click", c10);
 })
+function c1(e){
+    e.preventDefault();
+}
 function c2(e) {
     e.preventDefault();
     var c2a = $("#c2a").val().split("\n");
@@ -219,24 +223,19 @@ function c7(e) {
     var c7Arr = c7a.split("\n");
     var arr = [];
     var result = ""
-    console.log(c7Arr[0] * 3 + 1);
-    console.log(c7Arr.length);
-    if ((c7Arr[0] * 3 + 1) != c7Arr.length) {
+    if ((c7Arr[0]) != c7Arr.length -1) {
         $("#c7b").html("Dữ liệu đầu vào không đúng");
     } else {
         for (let i = 1; i <= c7Arr[0]; i++) {
-            console.log(i);
-            console.log(c7Arr[i * i + 2]);
-            arr.push(c7Arr[i * i + 2].split("").map(t => {
-                for (let j = 1; j < c7Arr[i * i + 1]; j++) {
-                    console.log(c7Arr[i * i + 1]);
+            arr.push(c7Arr[i].split(" ")[2].split("").map(t => {
+                for (let j = 1; j < c7Arr[i].split(" ")[1]; j++) {
                     t += t;
                 }
                 return t
             }))
         }
         for (let i = 0; i < arr.length; i++) {
-            result += `${i + 1}\n${arr[i].join("")}\n`
+            result += `${i + 1} ${arr[i].join("")}\n`
         }
         $("#c7b").html(result);
     }
@@ -265,15 +264,15 @@ function c9(e) {
     var x = [];
     var result = "";
     var c9a = $("#c9a").val().split("\n");
+    var c9a1=c9a[1].split(" ");
     if (isNaN(c9a[0])) {
         $("#c9b").html("Du lieu khong dung")
     } else {
-        for (i = 0; i < c9a[1].split(" ").length; i++) {
-            console.log(i);
+        for (i = 0; i < c9a1.length; i++) {
             var count = 0;;
-            for (j = 1; j <= c9a[1][i] / 2; j++) {
+            for (j = 1; j <= c9a1[i] / 2; j++) {
                 ;
-                if (c9a[1][i] % j == 0) {
+                if (c9a1[i] % j == 0) {
                     count++;
                 }
             }
